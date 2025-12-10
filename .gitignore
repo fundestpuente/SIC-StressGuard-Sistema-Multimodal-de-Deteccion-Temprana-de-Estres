@@ -1,0 +1,12 @@
+# Carpetas de Python
+__pycache__/
+*.pyc
+
+# Datos pesados
+data/processed/*
+data/*.parquet
+*.parquet
+
+# Cualquier caché temporal
+*.feather
+*.pkl

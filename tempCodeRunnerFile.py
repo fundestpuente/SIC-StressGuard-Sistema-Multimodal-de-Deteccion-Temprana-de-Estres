@@ -1,0 +1,1 @@
+TEST_SUBJECTS = ["S16", "S17"]

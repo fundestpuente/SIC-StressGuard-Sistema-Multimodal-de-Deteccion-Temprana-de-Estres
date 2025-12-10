@@ -31,3 +31,29 @@ Herramientas Implementadas
 - Lenguaje: Python 3.12
 - Librerías principales: pandas, numpy, scipy, kagglehub
 - Otras herramientas: Visual Studio Code, GitHub
+
+
+
+## Split por Sujeto
+Es una estrategia común en ML cuando trabajas con datos de personas:
+Leave-Subject-Out (LSO)
+
+Dejas algunos sujetos completamente fuera del entrenamiento
+Simula predecir en personas nuevas que el modelo nunca vio
+Más realista que mezclar datos del mismo sujeto en train y test
+
+## Ventajas:
+✅ Evita data leakage - Ningún dato del sujeto S16/S17 contamina el train
+✅ Generalización real - Prueba si el modelo funciona con personas nuevas
+✅ Más conservador - Test accuracy será más realista (puede ser menor)
+
+
+## Modo de uso:
+ Puede seleccionar los sujetos de su preferencia
+TEST_SUBJECTS = ["S16", "S17"]
+
+## PASOS PARA EJECUTAR
+1.- En terminal ejecutar: "pip install -r requirements.txt"
+2.- Ejecutar main.py 
+
+
